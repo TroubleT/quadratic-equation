@@ -7,13 +7,13 @@ let x2
 function quadraticE(a, b, c) {
     let d = b * b - 4 * a * c;
     if (d > 0) {
-        x1 = (-b - Math.sqrt(d)) / 2 * a;
-        x2 = (-b - Math.sqrt(d)) / 2 * a;
+        x1 = (-b - Math.sqrt(d)) / (2 * a);
+        x2 = (-b - Math.sqrt(d)) / (2 * a);
         let result = String(x1) + 'and' + String(x2);
         alert('You get two roots:' + result);
     }
     else if (d === 0) {
-        x1 = x2 = -b / 2 * a;
+        x1 = x2 = -b / (2 * a);
         let result = String(x1);
         alert('You get one root: ' + result);
     }
